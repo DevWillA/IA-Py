@@ -2,7 +2,7 @@ import heapq
 from base_conocimiento import rutas_ibague, obtener_heuristica_hacia_destino
 
 class MotorDeInferencia:
-    def _init_(self, base_hechos):
+    def __init__(self, base_hechos):
         self.grafo = base_hechos
 
     def busqueda_inteligente(self, inicio, destino):
@@ -56,7 +56,7 @@ class MotorDeInferencia:
         return ruta
 
 # --- PRUEBA Y EJECUCIÓN DEL SISTEMA ---
-if _name_ == "_main_":
+if __name__ == "__main__":
     print("="*55)
     print(" SISTEMA INTELIGENTE DE BÚSQUEDA DE RUTAS - IBAGUÉ ")
     print("="*55)
